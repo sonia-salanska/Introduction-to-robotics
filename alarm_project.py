@@ -27,7 +27,7 @@ def main():
 
     lcd.clear()
     lcd.setCursor(0, 1)
-    lcd.write("Press button")
+    lcd.write(" Press button")
 
     active_monitoring = [False]
 
@@ -73,7 +73,7 @@ def main():
                     pwm.ChangeDutyCycle(0)
 
                     lcd.clear()
-                    lcd.setCursor(0, 0)
+                    lcd.setCursor(0, 1)
                     lcd.write("Monitoring...")
 
             time.sleep(0.5)
