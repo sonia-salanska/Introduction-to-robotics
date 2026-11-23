@@ -32,7 +32,7 @@ def main():
     active_monitoring = [False]
 
     def on_event(index, event, tm):
-        if event & button.EV_SINGLE_CLICK:
+        if event & Button.EV_SINGLE_CLICK:
             active_monitoring[0] = not active_monitoring[0]
 
             if active_monitoring[0]:
