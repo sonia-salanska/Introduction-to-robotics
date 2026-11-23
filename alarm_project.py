@@ -53,7 +53,6 @@ def main():
                 distance = sonar.get_distance()
                 print("Distance: {} cm".format(distance))
 
-                # Jeśli przeszkoda bliżej niż 20 cm
                 if distance < 20:
                     lcd.clear()
                     lcd.setCursor(0, 0)
