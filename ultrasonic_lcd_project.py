@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import time
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 from grove.factory import Factory
