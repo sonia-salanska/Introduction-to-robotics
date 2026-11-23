@@ -2,6 +2,7 @@
 
 import time
 from grove.grove_ryb_led_button import GroveLedButton
+from grove.button import Button
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 from grove.grove_servo import GroveServo
 from grove.factory import Factory
@@ -23,7 +24,7 @@ def main():
     system_active = [False]
 
     def on_event(index, event, tm):
-        if event & button.EV_SINGLE_CLICK:
+        if event & Button.EV_SINGLE_CLICK:
             system_active[0] = not system_active[0]
 
             if system_active[0]:
