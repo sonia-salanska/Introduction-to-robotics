@@ -74,7 +74,7 @@ def main():
 
                     lcd.clear()
                     lcd.setCursor(0, 1)
-                    lcd.write("Monitoring...")
+                    lcd.write(" Monitoring...")
 
             time.sleep(0.5)
 
