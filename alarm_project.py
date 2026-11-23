@@ -2,6 +2,7 @@
 
 import time
 import RPi.GPIO as GPIO
+from grove.button import Button
 from grove.grove_ryb_led_button import GroveLedButton
 from grove.grove_ultrasonic_ranger import GroveUltrasonicRanger
 from grove.factory import Factory
