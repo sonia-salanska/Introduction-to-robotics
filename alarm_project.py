@@ -26,8 +26,8 @@ def main():
     pwm.start(0)
 
     lcd.clear()
-    lcd.setCursor(0, 0)
-    lcd.write("System Ready. Press button")
+    lcd.setCursor(0, 1)
+    lcd.write("Press button")
 
     active_monitoring = [False]
 
@@ -38,12 +38,12 @@ def main():
             if active_monitoring[0]:
                 button.led.light(True)
                 lcd.clear()
-                lcd.setCursor(0, 0)
+                lcd.setCursor(0, 1)
                 lcd.write("Monitoring...")
             else:
                 button.led.light(False)
                 lcd.clear()
-                lcd.setCursor(0, 0)
+                lcd.setCursor(0, 1)
                 lcd.write("Stopped")
 
     button.on_event = on_event
@@ -56,9 +56,9 @@ def main():
 
                 if distance < 20:
                     lcd.clear()
-                    lcd.setCursor(0, 0)
+                    lcd.setCursor(0, 1)
                     lcd.write("Limit exceeded!")
-                    lcd.setCursor(1, 0)
+                    lcd.setCursor(1, 1)
                     lcd.write("Distance: {} cm".format(distance))
 
                     filename = "alarm_photo.jpg"
